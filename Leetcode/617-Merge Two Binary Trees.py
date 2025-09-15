@@ -8,7 +8,7 @@ class Solution:
         return root1
       
       new_root = Treenode(root1.val + root2.val)
-      new_root.left = slef.mergeTrees(root1.left, root2.left)
-      new_root.right = self.mergeTrees(root1.eight, root2.right)
+      new_root.left = self.mergeTrees(root1.left, root2.left)
+      new_root.right = self.mergeTrees(root1.right, root2.right)
       
       return new_root
